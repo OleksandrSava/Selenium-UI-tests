@@ -10,6 +10,8 @@ class TestProducts(BaseTest):
     @pytest.mark.smoke
     def test_sort(self, prepare_login):
 
+        self.products_page.open_check()
+
         sorted_AZ_names = self.products_page.return_all_product_names()
 
         self.products_page.click_dropdown_menu()

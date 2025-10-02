@@ -34,8 +34,6 @@ def prepare_login(request):
     prepare_login.login_page.enter_password(Data.PASSWORD)
     prepare_login.login_page.click_submit()
 
-    prepare_login.products_page.open_check()
-
     return prepare_login
 
 
