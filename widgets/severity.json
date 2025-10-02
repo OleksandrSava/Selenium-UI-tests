@@ -1,0 +1,111 @@
+[ {
+  "uid" : "eefcf6ebdb9963eb",
+  "name" : "Purchase",
+  "time" : {
+    "start" : 1759413382878,
+    "stop" : 1759413382878,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "blocker"
+}, {
+  "uid" : "b94be69ba41a2793",
+  "name" : "test_login[Login test 2]",
+  "time" : {
+    "start" : 1759413991447,
+    "stop" : 1759413992829,
+    "duration" : 1382
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "360d743c5d19bcb2",
+  "name" : "test_login[Login test 3]",
+  "time" : {
+    "start" : 1759413993232,
+    "stop" : 1759413993608,
+    "duration" : 376
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "53e29616a0a20444",
+  "name" : "Purchase",
+  "time" : {
+    "start" : 1759413994099,
+    "stop" : 1759413994099,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3518b252b4f7e668",
+  "name" : "test_checkout[Checkout test 3]",
+  "time" : {
+    "start" : 1759413686625,
+    "stop" : 1759413686625,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "deeb713af6d25939",
+  "name" : "test_login[Login test 1]",
+  "time" : {
+    "start" : 1759413990207,
+    "stop" : 1759413991041,
+    "duration" : 834
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "adb0a064a0a742cf",
+  "name" : "test_checkout[Checkout test 2]",
+  "time" : {
+    "start" : 1759413585426,
+    "stop" : 1759413585426,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "9cfbdb52cea34fb5",
+  "name" : "test_checkout[Checkout test 4]",
+  "time" : {
+    "start" : 1759413787720,
+    "stop" : 1759413787720,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "519c068d673c7b62",
+  "name" : "test_login[Login test 4]",
+  "time" : {
+    "start" : 1759413993993,
+    "stop" : 1759413994003,
+    "duration" : 10
+  },
+  "status" : "broken",
+  "severity" : "blocker"
+}, {
+  "uid" : "f336568a9d43d950",
+  "name" : "test_checkout[Checkout test 1]",
+  "time" : {
+    "start" : 1759413484376,
+    "stop" : 1759413484376,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "1e12a110934a43de",
+  "name" : "test_checkout[Checkout test 5]",
+  "time" : {
+    "start" : 1759413888749,
+    "stop" : 1759413888749,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "critical"
+} ]
