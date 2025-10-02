@@ -1,17 +1,18 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
       "name" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
       "children" : [ {
         "name" : "Purchase",
-        "uid" : "eefcf6ebdb9963eb",
+        "uid" : "da1fb8a69904533d",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759413382878,
-          "stop" : 1759413382878,
+          "start" : 1759414337770,
+          "stop" : 1759414337770,
           "duration" : 0
         },
         "flaky" : false,
@@ -19,12 +20,12 @@
         "parameters" : [ ]
       }, {
         "name" : "test_checkout[Checkout test 1]",
-        "uid" : "f336568a9d43d950",
+        "uid" : "3923ef903d5d3ae8",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759413484376,
-          "stop" : 1759413484376,
+          "start" : 1759414348856,
+          "stop" : 1759414348856,
           "duration" : 0
         },
         "flaky" : false,
@@ -32,12 +33,12 @@
         "parameters" : [ "''", "''", "''", "False" ]
       }, {
         "name" : "test_checkout[Checkout test 2]",
-        "uid" : "adb0a064a0a742cf",
+        "uid" : "8397ccb8bb5819fa",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759413585426,
-          "stop" : 1759413585426,
+          "start" : 1759414359778,
+          "stop" : 1759414359778,
           "duration" : 0
         },
         "flaky" : false,
@@ -45,12 +46,12 @@
         "parameters" : [ "''", "'name'", "''", "False" ]
       }, {
         "name" : "test_checkout[Checkout test 3]",
-        "uid" : "3518b252b4f7e668",
+        "uid" : "328423258df9b8d7",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759413686625,
-          "stop" : 1759413686625,
+          "start" : 1759414370694,
+          "stop" : 1759414370694,
           "duration" : 0
         },
         "flaky" : false,
@@ -58,12 +59,12 @@
         "parameters" : [ "'lastname'", "''", "''", "False" ]
       }, {
         "name" : "test_checkout[Checkout test 4]",
-        "uid" : "9cfbdb52cea34fb5",
+        "uid" : "c9c9a9b14f270acb",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759413787720,
-          "stop" : 1759413787720,
+          "start" : 1759414381627,
+          "stop" : 1759414381627,
           "duration" : 0
         },
         "flaky" : false,
@@ -71,25 +72,38 @@
         "parameters" : [ "''", "''", "'31-000'", "False" ]
       }, {
         "name" : "test_checkout[Checkout test 5]",
-        "uid" : "1e12a110934a43de",
+        "uid" : "ee05f3918ce3d551",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759413888749,
-          "stop" : 1759413888749,
+          "start" : 1759414392559,
+          "stop" : 1759414392559,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'lastname'", "'name'", "'31-000'", "True" ]
       }, {
-        "name" : "Purchase",
-        "uid" : "53e29616a0a20444",
+        "name" : "test_login[Login test 4]",
+        "uid" : "d206ae80bc9d3b11",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759413994099,
-          "stop" : 1759413994099,
+          "start" : 1759414406311,
+          "stop" : 1759414416867,
+          "duration" : 10556
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "''", "True" ]
+      }, {
+        "name" : "Purchase",
+        "uid" : "d7962b1d6eaa63db",
+        "parentUid" : "67ab8d53552abb86baff55540292e010",
+        "status" : "broken",
+        "time" : {
+          "start" : 1759414416939,
+          "stop" : 1759414416939,
           "duration" : 0
         },
         "flaky" : false,
@@ -97,25 +111,7 @@
         "parameters" : [ ]
       } ],
       "uid" : "67ab8d53552abb86baff55540292e010"
-    }, {
-      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status\nfrom no such window\n  (Session info: chrome=112.0.5615.165)",
-      "children" : [ {
-        "name" : "test_login[Login test 4]",
-        "uid" : "519c068d673c7b62",
-        "parentUid" : "5e4c46d8ea1136b0a6c2db622337ce2b",
-        "status" : "broken",
-        "time" : {
-          "start" : 1759413993993,
-          "stop" : 1759413994003,
-          "duration" : 10
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "''", "''", "True" ]
-      } ],
-      "uid" : "5e4c46d8ea1136b0a6c2db622337ce2b"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ],
-  "name" : "categories"
+  } ]
 }

@@ -1,109 +1,109 @@
 [ {
-  "uid" : "eefcf6ebdb9963eb",
+  "uid" : "ee05f3918ce3d551",
+  "name" : "test_checkout[Checkout test 5]",
+  "time" : {
+    "start" : 1759414392559,
+    "stop" : 1759414392559,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "d206ae80bc9d3b11",
+  "name" : "test_login[Login test 4]",
+  "time" : {
+    "start" : 1759414406311,
+    "stop" : 1759414416867,
+    "duration" : 10556
+  },
+  "status" : "broken",
+  "severity" : "blocker"
+}, {
+  "uid" : "c9c9a9b14f270acb",
+  "name" : "test_checkout[Checkout test 4]",
+  "time" : {
+    "start" : 1759414381627,
+    "stop" : 1759414381627,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "da1fb8a69904533d",
   "name" : "Purchase",
   "time" : {
-    "start" : 1759413382878,
-    "stop" : 1759413382878,
+    "start" : 1759414337770,
+    "stop" : 1759414337770,
     "duration" : 0
   },
   "status" : "broken",
   "severity" : "blocker"
 }, {
-  "uid" : "b94be69ba41a2793",
+  "uid" : "ace44e2a014fe257",
   "name" : "test_login[Login test 2]",
   "time" : {
-    "start" : 1759413991447,
-    "stop" : 1759413992829,
-    "duration" : 1382
+    "start" : 1759414404667,
+    "stop" : 1759414405122,
+    "duration" : 455
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "360d743c5d19bcb2",
-  "name" : "test_login[Login test 3]",
+  "uid" : "328423258df9b8d7",
+  "name" : "test_checkout[Checkout test 3]",
   "time" : {
-    "start" : 1759413993232,
-    "stop" : 1759413993608,
-    "duration" : 376
+    "start" : 1759414370694,
+    "stop" : 1759414370694,
+    "duration" : 0
   },
-  "status" : "passed",
-  "severity" : "blocker"
+  "status" : "broken",
+  "severity" : "critical"
 }, {
-  "uid" : "53e29616a0a20444",
+  "uid" : "d7962b1d6eaa63db",
   "name" : "Purchase",
   "time" : {
-    "start" : 1759413994099,
-    "stop" : 1759413994099,
+    "start" : 1759414416939,
+    "stop" : 1759414416939,
     "duration" : 0
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "3518b252b4f7e668",
-  "name" : "test_checkout[Checkout test 3]",
-  "time" : {
-    "start" : 1759413686625,
-    "stop" : 1759413686625,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "deeb713af6d25939",
+  "uid" : "7f1349fd6f6b0bf",
   "name" : "test_login[Login test 1]",
   "time" : {
-    "start" : 1759413990207,
-    "stop" : 1759413991041,
-    "duration" : 834
+    "start" : 1759414403820,
+    "stop" : 1759414404282,
+    "duration" : 462
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "adb0a064a0a742cf",
-  "name" : "test_checkout[Checkout test 2]",
+  "uid" : "1f0769c0e6ca33ad",
+  "name" : "test_login[Login test 3]",
   "time" : {
-    "start" : 1759413585426,
-    "stop" : 1759413585426,
-    "duration" : 0
+    "start" : 1759414405502,
+    "stop" : 1759414405938,
+    "duration" : 436
   },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "9cfbdb52cea34fb5",
-  "name" : "test_checkout[Checkout test 4]",
-  "time" : {
-    "start" : 1759413787720,
-    "stop" : 1759413787720,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "519c068d673c7b62",
-  "name" : "test_login[Login test 4]",
-  "time" : {
-    "start" : 1759413993993,
-    "stop" : 1759413994003,
-    "duration" : 10
-  },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "f336568a9d43d950",
-  "name" : "test_checkout[Checkout test 1]",
+  "uid" : "8397ccb8bb5819fa",
+  "name" : "test_checkout[Checkout test 2]",
   "time" : {
-    "start" : 1759413484376,
-    "stop" : 1759413484376,
+    "start" : 1759414359778,
+    "stop" : 1759414359778,
     "duration" : 0
   },
   "status" : "broken",
   "severity" : "critical"
 }, {
-  "uid" : "1e12a110934a43de",
-  "name" : "test_checkout[Checkout test 5]",
+  "uid" : "3923ef903d5d3ae8",
+  "name" : "test_checkout[Checkout test 1]",
   "time" : {
-    "start" : 1759413888749,
-    "stop" : 1759413888749,
+    "start" : 1759414348856,
+    "stop" : 1759414348856,
     "duration" : 0
   },
   "status" : "broken",

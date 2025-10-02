@@ -1,95 +1,18 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
   "children" : [ {
-    "name" : "dab246fd52b2",
+    "name" : "19a41f715166",
     "children" : [ {
-      "name" : "1-MainThread",
+      "name" : "8-MainThread",
       "children" : [ {
-        "name" : "test_checkout[Checkout test 5]",
-        "uid" : "1e12a110934a43de",
-        "parentUid" : "98860078a4da4a75c4f6d2556a41a18e",
-        "status" : "broken",
-        "time" : {
-          "start" : 1759413888749,
-          "stop" : 1759413888749,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'lastname'", "'name'", "'31-000'", "True" ]
-      }, {
-        "name" : "Purchase",
-        "uid" : "53e29616a0a20444",
-        "parentUid" : "98860078a4da4a75c4f6d2556a41a18e",
-        "status" : "broken",
-        "time" : {
-          "start" : 1759413994099,
-          "stop" : 1759413994099,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_login[Login test 4]",
-        "uid" : "519c068d673c7b62",
-        "parentUid" : "98860078a4da4a75c4f6d2556a41a18e",
-        "status" : "broken",
-        "time" : {
-          "start" : 1759413993993,
-          "stop" : 1759413994003,
-          "duration" : 10
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "''", "''", "True" ]
-      }, {
-        "name" : "test_login[Login test 2]",
-        "uid" : "b94be69ba41a2793",
-        "parentUid" : "98860078a4da4a75c4f6d2556a41a18e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1759413991447,
-          "stop" : 1759413992829,
-          "duration" : 1382
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'Wrong login'", "''", "False" ]
-      }, {
-        "name" : "test_login[Login test 1]",
-        "uid" : "deeb713af6d25939",
-        "parentUid" : "98860078a4da4a75c4f6d2556a41a18e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1759413990207,
-          "stop" : 1759413991041,
-          "duration" : 834
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "''", "'Wrong password'", "False" ]
-      }, {
-        "name" : "Purchase",
-        "uid" : "eefcf6ebdb9963eb",
-        "parentUid" : "98860078a4da4a75c4f6d2556a41a18e",
-        "status" : "broken",
-        "time" : {
-          "start" : 1759413382878,
-          "stop" : 1759413382878,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "test_checkout[Checkout test 2]",
-        "uid" : "adb0a064a0a742cf",
-        "parentUid" : "98860078a4da4a75c4f6d2556a41a18e",
+        "uid" : "8397ccb8bb5819fa",
+        "parentUid" : "af5e915fef253feacfae0d7a94ccd5ae",
         "status" : "broken",
         "time" : {
-          "start" : 1759413585426,
-          "stop" : 1759413585426,
+          "start" : 1759414359778,
+          "stop" : 1759414359778,
           "duration" : 0
         },
         "flaky" : false,
@@ -97,60 +20,137 @@
         "parameters" : [ "''", "'name'", "''", "False" ]
       }, {
         "name" : "test_login[Login test 3]",
-        "uid" : "360d743c5d19bcb2",
-        "parentUid" : "98860078a4da4a75c4f6d2556a41a18e",
+        "uid" : "1f0769c0e6ca33ad",
+        "parentUid" : "af5e915fef253feacfae0d7a94ccd5ae",
         "status" : "passed",
         "time" : {
-          "start" : 1759413993232,
-          "stop" : 1759413993608,
-          "duration" : 376
+          "start" : 1759414405502,
+          "stop" : 1759414405938,
+          "duration" : 436
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "''", "''", "False" ]
       }, {
-        "name" : "test_checkout[Checkout test 3]",
-        "uid" : "3518b252b4f7e668",
-        "parentUid" : "98860078a4da4a75c4f6d2556a41a18e",
-        "status" : "broken",
-        "time" : {
-          "start" : 1759413686625,
-          "stop" : 1759413686625,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'lastname'", "''", "''", "False" ]
-      }, {
         "name" : "test_checkout[Checkout test 4]",
-        "uid" : "9cfbdb52cea34fb5",
-        "parentUid" : "98860078a4da4a75c4f6d2556a41a18e",
+        "uid" : "c9c9a9b14f270acb",
+        "parentUid" : "af5e915fef253feacfae0d7a94ccd5ae",
         "status" : "broken",
         "time" : {
-          "start" : 1759413787720,
-          "stop" : 1759413787720,
+          "start" : 1759414381627,
+          "stop" : 1759414381627,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "''", "''", "'31-000'", "False" ]
       }, {
-        "name" : "test_checkout[Checkout test 1]",
-        "uid" : "f336568a9d43d950",
-        "parentUid" : "98860078a4da4a75c4f6d2556a41a18e",
+        "name" : "test_checkout[Checkout test 3]",
+        "uid" : "328423258df9b8d7",
+        "parentUid" : "af5e915fef253feacfae0d7a94ccd5ae",
         "status" : "broken",
         "time" : {
-          "start" : 1759413484376,
-          "stop" : 1759413484376,
+          "start" : 1759414370694,
+          "stop" : 1759414370694,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'lastname'", "''", "''", "False" ]
+      }, {
+        "name" : "test_login[Login test 1]",
+        "uid" : "7f1349fd6f6b0bf",
+        "parentUid" : "af5e915fef253feacfae0d7a94ccd5ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1759414403820,
+          "stop" : 1759414404282,
+          "duration" : 462
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'Wrong password'", "False" ]
+      }, {
+        "name" : "Purchase",
+        "uid" : "da1fb8a69904533d",
+        "parentUid" : "af5e915fef253feacfae0d7a94ccd5ae",
+        "status" : "broken",
+        "time" : {
+          "start" : 1759414337770,
+          "stop" : 1759414337770,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Purchase",
+        "uid" : "d7962b1d6eaa63db",
+        "parentUid" : "af5e915fef253feacfae0d7a94ccd5ae",
+        "status" : "broken",
+        "time" : {
+          "start" : 1759414416939,
+          "stop" : 1759414416939,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_checkout[Checkout test 5]",
+        "uid" : "ee05f3918ce3d551",
+        "parentUid" : "af5e915fef253feacfae0d7a94ccd5ae",
+        "status" : "broken",
+        "time" : {
+          "start" : 1759414392559,
+          "stop" : 1759414392559,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'lastname'", "'name'", "'31-000'", "True" ]
+      }, {
+        "name" : "test_login[Login test 2]",
+        "uid" : "ace44e2a014fe257",
+        "parentUid" : "af5e915fef253feacfae0d7a94ccd5ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1759414404667,
+          "stop" : 1759414405122,
+          "duration" : 455
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'Wrong login'", "''", "False" ]
+      }, {
+        "name" : "test_login[Login test 4]",
+        "uid" : "d206ae80bc9d3b11",
+        "parentUid" : "af5e915fef253feacfae0d7a94ccd5ae",
+        "status" : "broken",
+        "time" : {
+          "start" : 1759414406311,
+          "stop" : 1759414416867,
+          "duration" : 10556
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "''", "True" ]
+      }, {
+        "name" : "test_checkout[Checkout test 1]",
+        "uid" : "3923ef903d5d3ae8",
+        "parentUid" : "af5e915fef253feacfae0d7a94ccd5ae",
+        "status" : "broken",
+        "time" : {
+          "start" : 1759414348856,
+          "stop" : 1759414348856,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "''", "''", "''", "False" ]
       } ],
-      "uid" : "98860078a4da4a75c4f6d2556a41a18e"
+      "uid" : "af5e915fef253feacfae0d7a94ccd5ae"
     } ],
-    "uid" : "4a00a5e76ff4d06d65201fdcde2b8ad0"
-  } ],
-  "name" : "timeline"
+    "uid" : "9ffa889d939c407e70f2da707ce41ee9"
+  } ]
 }
