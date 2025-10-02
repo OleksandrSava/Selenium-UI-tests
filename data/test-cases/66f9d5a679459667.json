@@ -1,12 +1,12 @@
 {
-  "uid" : "7f1349fd6f6b0bf",
-  "name" : "test_login[Login test 1]",
+  "uid" : "66f9d5a679459667",
+  "name" : "test_login[Login test 2]",
   "fullName" : "Tests.login_test.TestLogin#test_login",
-  "historyId" : "127cee1d5cf67b48cce0e6989a423a15",
+  "historyId" : "cb7a555ff8cefba768785906d099c352",
   "time" : {
-    "start" : 1759414403820,
-    "stop" : 1759414404282,
-    "duration" : 462
+    "start" : 1759417371923,
+    "stop" : 1759417372398,
+    "duration" : 475
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,8 +14,8 @@
   "beforeStages" : [ {
     "name" : "setup",
     "time" : {
-      "start" : 1759414403820,
-      "stop" : 1759414403820,
+      "start" : 1759417371922,
+      "stop" : 1759417371922,
       "duration" : 0
     },
     "status" : "passed",
@@ -29,9 +29,9 @@
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1759414403511,
-      "stop" : 1759414403820,
-      "duration" : 309
+      "start" : 1759417371593,
+      "stop" : 1759417371922,
+      "duration" : 329
     },
     "status" : "passed",
     "steps" : [ ],
@@ -44,8 +44,8 @@
   }, {
     "name" : "base_url",
     "time" : {
-      "start" : 1759414337771,
-      "stop" : 1759414337771,
+      "start" : 1759417304501,
+      "stop" : 1759417304501,
       "duration" : 0
     },
     "status" : "passed",
@@ -59,8 +59,8 @@
   }, {
     "name" : "event_loop_policy",
     "time" : {
-      "start" : 1759414337771,
-      "stop" : 1759414337771,
+      "start" : 1759417304502,
+      "stop" : 1759417304502,
       "duration" : 0
     },
     "status" : "passed",
@@ -74,9 +74,9 @@
   }, {
     "name" : "_verify_url",
     "time" : {
-      "start" : 1759414337771,
-      "stop" : 1759414337771,
-      "duration" : 0
+      "start" : 1759417304501,
+      "stop" : 1759417304502,
+      "duration" : 1
     },
     "status" : "passed",
     "steps" : [ ],
@@ -92,9 +92,9 @@
     "steps" : [ {
       "name" : "Open page https://www.saucedemo.com/",
       "time" : {
-        "start" : 1759414403821,
-        "stop" : 1759414404001,
-        "duration" : 180
+        "start" : 1759417371923,
+        "stop" : 1759417372127,
+        "duration" : 204
       },
       "status" : "passed",
       "steps" : [ ],
@@ -107,8 +107,8 @@
     }, {
       "name" : "Check if https://www.saucedemo.com/ is open",
       "time" : {
-        "start" : 1759414404001,
-        "stop" : 1759414404007,
+        "start" : 1759417372128,
+        "stop" : 1759417372134,
         "duration" : 6
       },
       "status" : "passed",
@@ -122,16 +122,16 @@
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1759414404007,
-        "stop" : 1759414404095,
-        "duration" : 88
+        "start" : 1759417372135,
+        "stop" : 1759417372234,
+        "duration" : 99
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "login",
-        "value" : "''"
+        "value" : "'Wrong login'"
       } ],
       "stepsCount" : 0,
       "attachmentsCount" : 0,
@@ -140,16 +140,16 @@
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1759414404095,
-        "stop" : 1759414404177,
-        "duration" : 82
+        "start" : 1759417372234,
+        "stop" : 1759417372291,
+        "duration" : 57
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "password",
-        "value" : "'Wrong password'"
+        "value" : "''"
       } ],
       "stepsCount" : 0,
       "attachmentsCount" : 0,
@@ -158,9 +158,9 @@
     }, {
       "name" : "Click submit button",
       "time" : {
-        "start" : 1759414404177,
-        "stop" : 1759414404254,
-        "duration" : 77
+        "start" : 1759417372291,
+        "stop" : 1759417372371,
+        "duration" : 80
       },
       "status" : "passed",
       "steps" : [ ],
@@ -173,8 +173,8 @@
     }, {
       "name" : "Check the error text",
       "time" : {
-        "start" : 1759414404254,
-        "stop" : 1759414404281,
+        "start" : 1759417372371,
+        "stop" : 1759417372398,
         "duration" : 27
       },
       "status" : "passed",
@@ -187,9 +187,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "a4a8804ddca6d28b",
+      "uid" : "3d509135854c31dc",
       "name" : "Error message",
-      "source" : "a4a8804ddca6d28b.attach",
+      "source" : "3d509135854c31dc.attach",
       "type" : "text/plain",
       "size" : 34
     } ],
@@ -202,8 +202,8 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1759414404283,
-      "stop" : 1759414404346,
+      "start" : 1759417372399,
+      "stop" : 1759417372462,
       "duration" : 63
     },
     "status" : "passed",
@@ -235,7 +235,7 @@
     "value" : "TestLogin"
   }, {
     "name" : "host",
-    "value" : "19a41f715166"
+    "value" : "81182d74f5ae"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -254,10 +254,10 @@
   } ],
   "parameters" : [ {
     "name" : "login",
-    "value" : "''"
+    "value" : "'Wrong login'"
   }, {
     "name" : "password",
-    "value" : "'Wrong password'"
+    "value" : "''"
   }, {
     "name" : "status",
     "value" : "False"
@@ -274,22 +274,30 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 2,
+        "passed" : 3,
         "unknown" : 0,
-        "total" : 2
+        "total" : 3
       },
       "items" : [ {
-        "uid" : "deeb713af6d25939",
+        "uid" : "ace44e2a014fe257",
         "status" : "passed",
         "time" : {
-          "start" : 1759413990207,
-          "stop" : 1759413991041,
-          "duration" : 834
+          "start" : 1759414404667,
+          "stop" : 1759414405122,
+          "duration" : 455
+        }
+      }, {
+        "uid" : "b94be69ba41a2793",
+        "status" : "passed",
+        "time" : {
+          "start" : 1759413991447,
+          "stop" : 1759413992829,
+          "duration" : 1382
         }
       } ]
     },
     "tags" : [ "smoke" ]
   },
-  "source" : "7f1349fd6f6b0bf.json",
-  "parameterValues" : [ "''", "'Wrong password'", "False" ]
+  "source" : "66f9d5a679459667.json",
+  "parameterValues" : [ "'Wrong login'", "''", "False" ]
 }

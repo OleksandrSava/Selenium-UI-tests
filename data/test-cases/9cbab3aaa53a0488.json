@@ -1,0 +1,315 @@
+{
+  "uid" : "9cbab3aaa53a0488",
+  "name" : "test_login[Login test 4]",
+  "fullName" : "Tests.login_test.TestLogin#test_login",
+  "historyId" : "bfdc8aebec2a79ef5aaac52d5600a1df",
+  "time" : {
+    "start" : 1759417373607,
+    "stop" : 1759417384192,
+    "duration" : 10585
+  },
+  "status" : "broken",
+  "statusMessage" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
+  "statusTrace" : "self = <Pages.page_2_products.ProductsPage object at 0x7f01adb838f0>\n\n    def open_check(self):\n        try:\n            with allure.step(f'Check if {self.page_url} is open'):\n>               self.wait.until(EC.url_contains(self.page_url))\n\nBase/Base_page.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"91e53fa94aa446e43969f51746e10d56\")>\nmethod = <function url_contains.<locals>._predicate at 0x7f01adae5c60>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Wait until the method returns a value that is not False.\n    \n        Calls the method provided with the driver as an argument until the\n        return value does not evaluate to ``False``.\n    \n        Parameters:\n        -----------\n        method: callable(WebDriver)\n            - A callable object that takes a WebDriver instance as an argument.\n    \n        message: str\n            - Optional message for :exc:`TimeoutException`\n    \n        Return:\n        -------\n        object: T\n            - The result of the last call to `method`\n    \n        Raises:\n        -------\n        TimeoutException\n            - If 'method' does not return a truthy value within the WebDriverWait\n            object's timeout\n    \n        Example:\n        --------\n        >>> from selenium.webdriver.common.by import By\n        >>> from selenium.webdriver.support.ui import WebDriverWait\n        >>> from selenium.webdriver.support import expected_conditions as EC\n    \n        # Wait until an element is visible on the page\n        >>> wait = WebDriverWait(driver, 10)\n        >>> element = wait.until(EC.visibility_of_element_located((By.ID, \"exampleId\")))\n        >>> print(element.text)\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            if time.monotonic() > end_time:\n                break\n            time.sleep(self._poll)\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:138: TimeoutException\n\nThe above exception was the direct cause of the following exception:\n\nself = <Tests.login_test.TestLogin object at 0x7f01adb36c00>, login = ''\npassword = '', status = True\n\n    @allure.severity(\"Blocker\")\n    @pytest.mark.smoke\n    @pytest.mark.parametrize(\n    \n        'login, password, status',\n    [\n        (Data.LOGIN, 'Wrong password', False),\n        ('Wrong login', Data.PASSWORD, False),\n        ('', '', False),\n        (Data.LOGIN, Data.PASSWORD, True),\n    ],\n    \n        ids = [f\"Login test {i + 1}\" for i in range(4)]\n    )\n    def test_login(self, login, password, status):\n        self.login_page.open()\n        self.login_page.open_check()\n    \n        self.login_page.enter_login(login)\n        self.login_page.enter_password(password)\n    \n        self.login_page.click_submit()\n    \n        if status:\n>           self.products_page.open_check()\n\nTests/login_test.py:34: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Pages.page_2_products.ProductsPage object at 0x7f01adb838f0>\n\n    def open_check(self):\n        try:\n            with allure.step(f'Check if {self.page_url} is open'):\n                self.wait.until(EC.url_contains(self.page_url))\n        except Exception as e:\n            allure.attach(self.driver.get_screenshot_as_png(),\n                          name=\"Page_load_error\",\n                          attachment_type=allure.attachment_type.PNG)\n>           raise RuntimeError(f\"Failed to open page {self.page_url}\") from e\nE           RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html\n\nBase/Base_page.py:23: RuntimeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1759417373300,
+      "stop" : 1759417373606,
+      "duration" : 306
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1759417373607,
+      "stop" : 1759417373607,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1759417304501,
+      "stop" : 1759417304501,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "event_loop_policy",
+    "time" : {
+      "start" : 1759417304502,
+      "stop" : 1759417304502,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1759417304501,
+      "stop" : 1759417304502,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
+    "statusTrace" : "self = <Pages.page_2_products.ProductsPage object at 0x7f01adb838f0>\n\n    def open_check(self):\n        try:\n            with allure.step(f'Check if {self.page_url} is open'):\n>               self.wait.until(EC.url_contains(self.page_url))\n\nBase/Base_page.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"91e53fa94aa446e43969f51746e10d56\")>\nmethod = <function url_contains.<locals>._predicate at 0x7f01adae5c60>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Wait until the method returns a value that is not False.\n    \n        Calls the method provided with the driver as an argument until the\n        return value does not evaluate to ``False``.\n    \n        Parameters:\n        -----------\n        method: callable(WebDriver)\n            - A callable object that takes a WebDriver instance as an argument.\n    \n        message: str\n            - Optional message for :exc:`TimeoutException`\n    \n        Return:\n        -------\n        object: T\n            - The result of the last call to `method`\n    \n        Raises:\n        -------\n        TimeoutException\n            - If 'method' does not return a truthy value within the WebDriverWait\n            object's timeout\n    \n        Example:\n        --------\n        >>> from selenium.webdriver.common.by import By\n        >>> from selenium.webdriver.support.ui import WebDriverWait\n        >>> from selenium.webdriver.support import expected_conditions as EC\n    \n        # Wait until an element is visible on the page\n        >>> wait = WebDriverWait(driver, 10)\n        >>> element = wait.until(EC.visibility_of_element_located((By.ID, \"exampleId\")))\n        >>> print(element.text)\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            if time.monotonic() > end_time:\n                break\n            time.sleep(self._poll)\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:138: TimeoutException\n\nThe above exception was the direct cause of the following exception:\n\nself = <Tests.login_test.TestLogin object at 0x7f01adb36c00>, login = ''\npassword = '', status = True\n\n    @allure.severity(\"Blocker\")\n    @pytest.mark.smoke\n    @pytest.mark.parametrize(\n    \n        'login, password, status',\n    [\n        (Data.LOGIN, 'Wrong password', False),\n        ('Wrong login', Data.PASSWORD, False),\n        ('', '', False),\n        (Data.LOGIN, Data.PASSWORD, True),\n    ],\n    \n        ids = [f\"Login test {i + 1}\" for i in range(4)]\n    )\n    def test_login(self, login, password, status):\n        self.login_page.open()\n        self.login_page.open_check()\n    \n        self.login_page.enter_login(login)\n        self.login_page.enter_password(password)\n    \n        self.login_page.click_submit()\n    \n        if status:\n>           self.products_page.open_check()\n\nTests/login_test.py:34: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Pages.page_2_products.ProductsPage object at 0x7f01adb838f0>\n\n    def open_check(self):\n        try:\n            with allure.step(f'Check if {self.page_url} is open'):\n                self.wait.until(EC.url_contains(self.page_url))\n        except Exception as e:\n            allure.attach(self.driver.get_screenshot_as_png(),\n                          name=\"Page_load_error\",\n                          attachment_type=allure.attachment_type.PNG)\n>           raise RuntimeError(f\"Failed to open page {self.page_url}\") from e\nE           RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html\n\nBase/Base_page.py:23: RuntimeError",
+    "steps" : [ {
+      "name" : "Open page https://www.saucedemo.com/",
+      "time" : {
+        "start" : 1759417373608,
+        "stop" : 1759417373845,
+        "duration" : 237
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if https://www.saucedemo.com/ is open",
+      "time" : {
+        "start" : 1759417373845,
+        "stop" : 1759417373852,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Enter login",
+      "time" : {
+        "start" : 1759417373852,
+        "stop" : 1759417373933,
+        "duration" : 81
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "''"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1759417373933,
+        "stop" : 1759417373988,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "''"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click submit button",
+      "time" : {
+        "start" : 1759417373988,
+        "stop" : 1759417374072,
+        "duration" : 84
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if https://www.saucedemo.com/inventory.html is open",
+      "time" : {
+        "start" : 1759417374073,
+        "stop" : 1759417384144,
+        "duration" : 10071
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"/usr/workspace/Base/Base_page.py\", line 18, in open_check\n    self.wait.until(EC.url_contains(self.page_url))\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 138, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "b00f2e7f0a315138",
+      "name" : "Page_load_error",
+      "source" : "b00f2e7f0a315138.png",
+      "type" : "image/png",
+      "size" : 36116
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1759417384199,
+      "stop" : 1759417384263,
+      "duration" : 64
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Tests for login"
+  }, {
+    "name" : "severity",
+    "value" : "Blocker"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Tests"
+  }, {
+    "name" : "suite",
+    "value" : "login_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "81182d74f5ae"
+  }, {
+    "name" : "thread",
+    "value" : "8-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Tests.login_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "login",
+    "value" : "''"
+  }, {
+    "name" : "password",
+    "value" : "''"
+  }, {
+    "name" : "status",
+    "value" : "True"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "d206ae80bc9d3b11",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
+        "time" : {
+          "start" : 1759414406311,
+          "stop" : 1759414416867,
+          "duration" : 10556
+        }
+      }, {
+        "uid" : "519c068d673c7b62",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status\nfrom no such window\n  (Session info: chrome=112.0.5615.165)",
+        "time" : {
+          "start" : 1759413993993,
+          "stop" : 1759413994003,
+          "duration" : 10
+        }
+      } ]
+    },
+    "tags" : [ "smoke" ]
+  },
+  "source" : "9cbab3aaa53a0488.json",
+  "parameterValues" : [ "''", "''", "True" ]
+}
