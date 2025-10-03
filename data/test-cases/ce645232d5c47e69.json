@@ -1,21 +1,21 @@
 {
-  "uid" : "5f7f7ece0b76e09c",
+  "uid" : "ce645232d5c47e69",
   "name" : "test_login[Login test 2]",
   "fullName" : "Tests.login_test.TestLogin#test_login",
-  "historyId" : "cb7a555ff8cefba768785906d099c352",
+  "historyId" : "4979e7da4ef7ef7dba05e51839b88669",
   "time" : {
-    "start" : 1759486314502,
-    "stop" : 1759486314965,
-    "duration" : 463
+    "start" : 1759486855128,
+    "stop" : 1759486855610,
+    "duration" : 482
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "base_url",
+    "name" : "event_loop_policy",
     "time" : {
-      "start" : 1759486247352,
-      "stop" : 1759486247352,
+      "start" : 1759486845325,
+      "stop" : 1759486845325,
       "duration" : 0
     },
     "status" : "passed",
@@ -29,8 +29,38 @@
   }, {
     "name" : "_verify_url",
     "time" : {
-      "start" : 1759486247352,
-      "stop" : 1759486247352,
+      "start" : 1759486845325,
+      "stop" : 1759486845325,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1759486845325,
+      "stop" : 1759486845325,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1759486855127,
+      "stop" : 1759486855127,
       "duration" : 0
     },
     "status" : "passed",
@@ -44,39 +74,9 @@
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1759486314179,
-      "stop" : 1759486314501,
-      "duration" : 322
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "setup",
-    "time" : {
-      "start" : 1759486314501,
-      "stop" : 1759486314501,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "event_loop_policy",
-    "time" : {
-      "start" : 1759486247353,
-      "stop" : 1759486247353,
-      "duration" : 0
+      "start" : 1759486854815,
+      "stop" : 1759486855127,
+      "duration" : 312
     },
     "status" : "passed",
     "steps" : [ ],
@@ -92,9 +92,9 @@
     "steps" : [ {
       "name" : "Open page https://www.saucedemo.com/",
       "time" : {
-        "start" : 1759486314502,
-        "stop" : 1759486314681,
-        "duration" : 179
+        "start" : 1759486855128,
+        "stop" : 1759486855306,
+        "duration" : 178
       },
       "status" : "passed",
       "steps" : [ ],
@@ -107,9 +107,9 @@
     }, {
       "name" : "Check if https://www.saucedemo.com/ is open",
       "time" : {
-        "start" : 1759486314681,
-        "stop" : 1759486314689,
-        "duration" : 8
+        "start" : 1759486855306,
+        "stop" : 1759486855315,
+        "duration" : 9
       },
       "status" : "passed",
       "steps" : [ ],
@@ -122,9 +122,9 @@
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1759486314689,
-        "stop" : 1759486314798,
-        "duration" : 109
+        "start" : 1759486855315,
+        "stop" : 1759486855428,
+        "duration" : 113
       },
       "status" : "passed",
       "steps" : [ ],
@@ -140,16 +140,16 @@
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1759486314798,
-        "stop" : 1759486314858,
-        "duration" : 60
+        "start" : 1759486855428,
+        "stop" : 1759486855502,
+        "duration" : 74
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "password",
-        "value" : "''"
+        "value" : "'secret_sauce'"
       } ],
       "stepsCount" : 0,
       "attachmentsCount" : 0,
@@ -158,9 +158,9 @@
     }, {
       "name" : "Click submit button",
       "time" : {
-        "start" : 1759486314858,
-        "stop" : 1759486314935,
-        "duration" : 77
+        "start" : 1759486855502,
+        "stop" : 1759486855584,
+        "duration" : 82
       },
       "status" : "passed",
       "steps" : [ ],
@@ -173,9 +173,9 @@
     }, {
       "name" : "Check the error text",
       "time" : {
-        "start" : 1759486314935,
-        "stop" : 1759486314965,
-        "duration" : 30
+        "start" : 1759486855584,
+        "stop" : 1759486855609,
+        "duration" : 25
       },
       "status" : "passed",
       "steps" : [ ],
@@ -187,11 +187,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "1bbc45c2f8157435",
+      "uid" : "4fa24377cc83d31f",
       "name" : "Error message",
-      "source" : "1bbc45c2f8157435.attach",
+      "source" : "4fa24377cc83d31f.attach",
       "type" : "text/plain",
-      "size" : 34
+      "size" : 73
     } ],
     "parameters" : [ ],
     "stepsCount" : 6,
@@ -202,8 +202,8 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1759486314966,
-      "stop" : 1759486315029,
+      "start" : 1759486855611,
+      "stop" : 1759486855674,
       "duration" : 63
     },
     "status" : "passed",
@@ -216,11 +216,11 @@
     "hasContent" : false
   } ],
   "labels" : [ {
-    "name" : "severity",
-    "value" : "Blocker"
-  }, {
     "name" : "feature",
     "value" : "Tests for login"
+  }, {
+    "name" : "severity",
+    "value" : "Blocker"
   }, {
     "name" : "tag",
     "value" : "smoke"
@@ -235,7 +235,7 @@
     "value" : "TestLogin"
   }, {
     "name" : "host",
-    "value" : "a53c62644d75"
+    "value" : "8d3a87431b3c"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -257,7 +257,7 @@
     "value" : "'Wrong login'"
   }, {
     "name" : "password",
-    "value" : "''"
+    "value" : "'secret_sauce'"
   }, {
     "name" : "status",
     "value" : "False"
@@ -269,43 +269,8 @@
     "severity" : "blocker",
     "retries" : [ ],
     "categories" : [ ],
-    "history" : {
-      "statistic" : {
-        "failed" : 0,
-        "broken" : 0,
-        "skipped" : 0,
-        "passed" : 4,
-        "unknown" : 0,
-        "total" : 4
-      },
-      "items" : [ {
-        "uid" : "66f9d5a679459667",
-        "status" : "passed",
-        "time" : {
-          "start" : 1759417371923,
-          "stop" : 1759417372398,
-          "duration" : 475
-        }
-      }, {
-        "uid" : "ace44e2a014fe257",
-        "status" : "passed",
-        "time" : {
-          "start" : 1759414404667,
-          "stop" : 1759414405122,
-          "duration" : 455
-        }
-      }, {
-        "uid" : "b94be69ba41a2793",
-        "status" : "passed",
-        "time" : {
-          "start" : 1759413991447,
-          "stop" : 1759413992829,
-          "duration" : 1382
-        }
-      } ]
-    },
     "tags" : [ "smoke" ]
   },
-  "source" : "5f7f7ece0b76e09c.json",
-  "parameterValues" : [ "'Wrong login'", "''", "False" ]
+  "source" : "ce645232d5c47e69.json",
+  "parameterValues" : [ "'Wrong login'", "'secret_sauce'", "False" ]
 }

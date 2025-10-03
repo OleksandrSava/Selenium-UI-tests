@@ -1,111 +1,111 @@
 [ {
-  "uid" : "f4b774457c78d51c",
-  "name" : "test_login[Login test 4]",
-  "time" : {
-    "start" : 1759486316197,
-    "stop" : 1759486326755,
-    "duration" : 10558
-  },
-  "status" : "broken",
-  "severity" : "blocker"
-}, {
-  "uid" : "7ae9c57ee02a060c",
-  "name" : "test_checkout[Checkout test 4]",
-  "time" : {
-    "start" : 1759486291298,
-    "stop" : 1759486291298,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "11316a297d5b2625",
-  "name" : "test_checkout[Checkout test 2]",
-  "time" : {
-    "start" : 1759486269384,
-    "stop" : 1759486269384,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "9a3360445256790e",
-  "name" : "test_login[Login test 3]",
-  "time" : {
-    "start" : 1759486315356,
-    "stop" : 1759486315820,
-    "duration" : 464
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "17cb8fb05edd2d43",
+  "uid" : "2672dee2e425f7d0",
   "name" : "test_checkout[Checkout test 1]",
   "time" : {
-    "start" : 1759486258411,
-    "stop" : 1759486258411,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "b06dd93b4f17e174",
-  "name" : "Purchase",
-  "time" : {
-    "start" : 1759486247351,
-    "stop" : 1759486247351,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "blocker"
-}, {
-  "uid" : "5f7f7ece0b76e09c",
-  "name" : "test_login[Login test 2]",
-  "time" : {
-    "start" : 1759486314502,
-    "stop" : 1759486314965,
-    "duration" : 463
+    "start" : 1759486848111,
+    "stop" : 1759486848341,
+    "duration" : 230
   },
   "status" : "passed",
-  "severity" : "blocker"
+  "severity" : "critical"
 }, {
-  "uid" : "219554e802f86c7b",
-  "name" : "Purchase",
-  "time" : {
-    "start" : 1759486327669,
-    "stop" : 1759486337805,
-    "duration" : 10136
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "c7cbf19548db9b78",
+  "uid" : "8f2a3a8d60949e10",
   "name" : "test_login[Login test 1]",
   "time" : {
-    "start" : 1759486313644,
-    "stop" : 1759486314114,
-    "duration" : 470
+    "start" : 1759486854262,
+    "stop" : 1759486854750,
+    "duration" : 488
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "850213525fade9f9",
-  "name" : "test_checkout[Checkout test 5]",
+  "uid" : "c225284c98d29511",
+  "name" : "Purchase",
   "time" : {
-    "start" : 1759486302397,
-    "stop" : 1759486302397,
-    "duration" : 0
+    "start" : 1759486846574,
+    "stop" : 1759486846966,
+    "duration" : 392
   },
-  "status" : "broken",
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "93b044f1b00ff43f",
+  "name" : "test_checkout[Checkout test 4]",
+  "time" : {
+    "start" : 1759486852267,
+    "stop" : 1759486852510,
+    "duration" : 243
+  },
+  "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "fc3ca754e6559984",
+  "uid" : "5dfbdb55c4b362a5",
+  "name" : "test_checkout[Checkout test 2]",
+  "time" : {
+    "start" : 1759486849489,
+    "stop" : 1759486849735,
+    "duration" : 246
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "ec4125d0470a3002",
   "name" : "test_checkout[Checkout test 3]",
   "time" : {
-    "start" : 1759486280349,
-    "stop" : 1759486280349,
-    "duration" : 0
+    "start" : 1759486850879,
+    "stop" : 1759486851128,
+    "duration" : 249
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "critical"
+}, {
+  "uid" : "ce645232d5c47e69",
+  "name" : "test_login[Login test 2]",
+  "time" : {
+    "start" : 1759486855128,
+    "stop" : 1759486855610,
+    "duration" : 482
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "187f912e7578c02a",
+  "name" : "test_checkout[Checkout test 5]",
+  "time" : {
+    "start" : 1759486853642,
+    "stop" : 1759486853890,
+    "duration" : 248
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1770c839ded191f0",
+  "name" : "test_login[Login test 3]",
+  "time" : {
+    "start" : 1759486855978,
+    "stop" : 1759486856423,
+    "duration" : 445
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "64e8cdaae628758f",
+  "name" : "test_login[Login test 4]",
+  "time" : {
+    "start" : 1759486856802,
+    "stop" : 1759486857285,
+    "duration" : 483
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "103b2f4b36ab1a89",
+  "name" : "Purchase",
+  "time" : {
+    "start" : 1759486858137,
+    "stop" : 1759486858484,
+    "duration" : 347
+  },
+  "status" : "passed",
+  "severity" : "normal"
 } ]
