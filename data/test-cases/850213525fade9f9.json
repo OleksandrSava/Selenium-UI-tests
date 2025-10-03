@@ -1,24 +1,24 @@
 {
-  "uid" : "233d304abecbce41",
+  "uid" : "850213525fade9f9",
   "name" : "test_checkout[Checkout test 5]",
   "fullName" : "Tests.checkout_test.TestCheckout#test_checkout",
   "historyId" : "cb6e4cef0e0c95dcfff0706aedfdd9a6",
   "time" : {
-    "start" : 1759417359768,
-    "stop" : 1759417359768,
+    "start" : 1759486302397,
+    "stop" : 1759486302397,
     "duration" : 0
   },
   "status" : "broken",
   "statusMessage" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
-  "statusTrace" : "self = <Pages.page_2_products.ProductsPage object at 0x7f01adb7ddf0>\n\n    def open_check(self):\n        try:\n            with allure.step(f'Check if {self.page_url} is open'):\n>               self.wait.until(EC.url_contains(self.page_url))\n\nBase/Base_page.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"76ca2521aeb07003aca1b43555b7d3b7\")>\nmethod = <function url_contains.<locals>._predicate at 0x7f01adb3dee0>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Wait until the method returns a value that is not False.\n    \n        Calls the method provided with the driver as an argument until the\n        return value does not evaluate to ``False``.\n    \n        Parameters:\n        -----------\n        method: callable(WebDriver)\n            - A callable object that takes a WebDriver instance as an argument.\n    \n        message: str\n            - Optional message for :exc:`TimeoutException`\n    \n        Return:\n        -------\n        object: T\n            - The result of the last call to `method`\n    \n        Raises:\n        -------\n        TimeoutException\n            - If 'method' does not return a truthy value within the WebDriverWait\n            object's timeout\n    \n        Example:\n        --------\n        >>> from selenium.webdriver.common.by import By\n        >>> from selenium.webdriver.support.ui import WebDriverWait\n        >>> from selenium.webdriver.support import expected_conditions as EC\n    \n        # Wait until an element is visible on the page\n        >>> wait = WebDriverWait(driver, 10)\n        >>> element = wait.until(EC.visibility_of_element_located((By.ID, \"exampleId\")))\n        >>> print(element.text)\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            if time.monotonic() > end_time:\n                break\n            time.sleep(self._poll)\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:138: TimeoutException\n\nThe above exception was the direct cause of the following exception:\n\nprepare_login = <class 'Tests.checkout_test.TestCheckout'>\n\n    @pytest.fixture\n    def prepare_checkout(prepare_login):\n    \n        prepare_checkout = prepare_login\n    \n>       prepare_checkout.products_page.open_check()\n\nTests/conftest.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Pages.page_2_products.ProductsPage object at 0x7f01adb7ddf0>\n\n    def open_check(self):\n        try:\n            with allure.step(f'Check if {self.page_url} is open'):\n                self.wait.until(EC.url_contains(self.page_url))\n        except Exception as e:\n            allure.attach(self.driver.get_screenshot_as_png(),\n                          name=\"Page_load_error\",\n                          attachment_type=allure.attachment_type.PNG)\n>           raise RuntimeError(f\"Failed to open page {self.page_url}\") from e\nE           RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html\n\nBase/Base_page.py:23: RuntimeError",
+  "statusTrace" : "self = <Pages.page_2_products.ProductsPage object at 0x7faaeed25bb0>\n\n    def open_check(self):\n        try:\n            with allure.step(f'Check if {self.page_url} is open'):\n>               self.wait.until(EC.url_contains(self.page_url))\n\nBase/Base_page.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"19c1d7a6315ee7e7a38ec01fa721dd2b\")>\nmethod = <function url_contains.<locals>._predicate at 0x7faaeecedf80>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Wait until the method returns a value that is not False.\n    \n        Calls the method provided with the driver as an argument until the\n        return value does not evaluate to ``False``.\n    \n        Parameters:\n        -----------\n        method: callable(WebDriver)\n            - A callable object that takes a WebDriver instance as an argument.\n    \n        message: str\n            - Optional message for :exc:`TimeoutException`\n    \n        Return:\n        -------\n        object: T\n            - The result of the last call to `method`\n    \n        Raises:\n        -------\n        TimeoutException\n            - If 'method' does not return a truthy value within the WebDriverWait\n            object's timeout\n    \n        Example:\n        --------\n        >>> from selenium.webdriver.common.by import By\n        >>> from selenium.webdriver.support.ui import WebDriverWait\n        >>> from selenium.webdriver.support import expected_conditions as EC\n    \n        # Wait until an element is visible on the page\n        >>> wait = WebDriverWait(driver, 10)\n        >>> element = wait.until(EC.visibility_of_element_located((By.ID, \"exampleId\")))\n        >>> print(element.text)\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            if time.monotonic() > end_time:\n                break\n            time.sleep(self._poll)\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:138: TimeoutException\n\nThe above exception was the direct cause of the following exception:\n\nprepare_login = <class 'Tests.checkout_test.TestCheckout'>\n\n    @pytest.fixture\n    def prepare_checkout(prepare_login):\n    \n        prepare_checkout = prepare_login\n    \n>       prepare_checkout.products_page.open_check()\n\nTests/conftest.py:64: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Pages.page_2_products.ProductsPage object at 0x7faaeed25bb0>\n\n    def open_check(self):\n        try:\n            with allure.step(f'Check if {self.page_url} is open'):\n                self.wait.until(EC.url_contains(self.page_url))\n        except Exception as e:\n            allure.attach(self.driver.get_screenshot_as_png(),\n                          name=\"Page_load_error\",\n                          attachment_type=allure.attachment_type.PNG)\n>           raise RuntimeError(f\"Failed to open page {self.page_url}\") from e\nE           RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html\n\nBase/Base_page.py:23: RuntimeError",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "driver",
+    "name" : "base_url",
     "time" : {
-      "start" : 1759417359769,
-      "stop" : 1759417360079,
-      "duration" : 310
+      "start" : 1759486247352,
+      "stop" : 1759486247352,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,38 +31,8 @@
   }, {
     "name" : "setup",
     "time" : {
-      "start" : 1759417360080,
-      "stop" : 1759417360080,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "base_url",
-    "time" : {
-      "start" : 1759417304501,
-      "stop" : 1759417304501,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "event_loop_policy",
-    "time" : {
-      "start" : 1759417304502,
-      "stop" : 1759417304502,
+      "start" : 1759486302719,
+      "stop" : 1759486302719,
       "duration" : 0
     },
     "status" : "passed",
@@ -76,9 +46,39 @@
   }, {
     "name" : "_verify_url",
     "time" : {
-      "start" : 1759417304501,
-      "stop" : 1759417304502,
-      "duration" : 1
+      "start" : 1759486247352,
+      "stop" : 1759486247352,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "event_loop_policy",
+    "time" : {
+      "start" : 1759486247353,
+      "stop" : 1759486247353,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1759486302398,
+      "stop" : 1759486302719,
+      "duration" : 321
     },
     "status" : "passed",
     "steps" : [ ],
@@ -91,19 +91,19 @@
   }, {
     "name" : "prepare_checkout",
     "time" : {
-      "start" : 1759417360515,
-      "stop" : 1759417370642,
-      "duration" : 10127
+      "start" : 1759486303121,
+      "stop" : 1759486313255,
+      "duration" : 10134
     },
     "status" : "broken",
     "statusMessage" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html\n",
-    "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 38, in run_old_style_hookwrapper\n    res = yield\n          ^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 139, in _multicall\n    teardown.throw(exception)\n  File \"/usr/local/lib/python3.12/site-packages/_pytest/setuponly.py\", line 36, in pytest_fixture_setup\n    return (yield)\n            ^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 121, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/_pytest/fixtures.py\", line 1195, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/_pytest/fixtures.py\", line 929, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n                     ^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/workspace/Tests/conftest.py\", line 45, in prepare_checkout\n    prepare_checkout.products_page.open_check()\n  File \"/usr/workspace/Base/Base_page.py\", line 23, in open_check\n    raise RuntimeError(f\"Failed to open page {self.page_url}\") from e\n",
+    "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 38, in run_old_style_hookwrapper\n    res = yield\n          ^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 139, in _multicall\n    teardown.throw(exception)\n  File \"/usr/local/lib/python3.12/site-packages/_pytest/setuponly.py\", line 36, in pytest_fixture_setup\n    return (yield)\n            ^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 121, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/_pytest/fixtures.py\", line 1195, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/_pytest/fixtures.py\", line 929, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n                     ^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/workspace/Tests/conftest.py\", line 64, in prepare_checkout\n    prepare_checkout.products_page.open_check()\n  File \"/usr/workspace/Base/Base_page.py\", line 23, in open_check\n    raise RuntimeError(f\"Failed to open page {self.page_url}\") from e\n",
     "steps" : [ {
       "name" : "Check if https://www.saucedemo.com/inventory.html is open",
       "time" : {
-        "start" : 1759417360515,
-        "stop" : 1759417370587,
-        "duration" : 10072
+        "start" : 1759486303121,
+        "stop" : 1759486313203,
+        "duration" : 10082
       },
       "status" : "broken",
       "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
@@ -117,9 +117,9 @@
       "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "a2e37193cfa6a2d6",
+      "uid" : "88fdaf0f51aec543",
       "name" : "Page_load_error",
-      "source" : "a2e37193cfa6a2d6.png",
+      "source" : "88fdaf0f51aec543.png",
       "type" : "image/png",
       "size" : 36116
     } ],
@@ -131,17 +131,17 @@
   }, {
     "name" : "prepare_login",
     "time" : {
-      "start" : 1759417360080,
-      "stop" : 1759417360515,
-      "duration" : 435
+      "start" : 1759486302719,
+      "stop" : 1759486303121,
+      "duration" : 402
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Open page https://www.saucedemo.com/",
       "time" : {
-        "start" : 1759417360080,
-        "stop" : 1759417360282,
-        "duration" : 202
+        "start" : 1759486302720,
+        "stop" : 1759486302890,
+        "duration" : 170
       },
       "status" : "passed",
       "steps" : [ ],
@@ -154,9 +154,9 @@
     }, {
       "name" : "Check if https://www.saucedemo.com/ is open",
       "time" : {
-        "start" : 1759417360282,
-        "stop" : 1759417360290,
-        "duration" : 8
+        "start" : 1759486302890,
+        "stop" : 1759486302896,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ ],
@@ -169,9 +169,9 @@
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1759417360290,
-        "stop" : 1759417360372,
-        "duration" : 82
+        "start" : 1759486302896,
+        "stop" : 1759486302980,
+        "duration" : 84
       },
       "status" : "passed",
       "steps" : [ ],
@@ -187,9 +187,9 @@
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1759417360372,
-        "stop" : 1759417360429,
-        "duration" : 57
+        "start" : 1759486302980,
+        "stop" : 1759486303040,
+        "duration" : 60
       },
       "status" : "passed",
       "steps" : [ ],
@@ -205,9 +205,9 @@
     }, {
       "name" : "Click submit button",
       "time" : {
-        "start" : 1759417360429,
-        "stop" : 1759417360515,
-        "duration" : 86
+        "start" : 1759486303040,
+        "stop" : 1759486303121,
+        "duration" : 81
       },
       "status" : "passed",
       "steps" : [ ],
@@ -228,9 +228,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1759417370652,
-      "stop" : 1759417370719,
-      "duration" : 67
+      "start" : 1759486313265,
+      "stop" : 1759486313329,
+      "duration" : 64
     },
     "status" : "passed",
     "steps" : [ ],
@@ -261,7 +261,7 @@
     "value" : "TestCheckout"
   }, {
     "name" : "host",
-    "value" : "81182d74f5ae"
+    "value" : "a53c62644d75"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -305,13 +305,22 @@
     "history" : {
       "statistic" : {
         "failed" : 0,
-        "broken" : 3,
+        "broken" : 4,
         "skipped" : 0,
         "passed" : 0,
         "unknown" : 0,
-        "total" : 3
+        "total" : 4
       },
       "items" : [ {
+        "uid" : "233d304abecbce41",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
+        "time" : {
+          "start" : 1759417359768,
+          "stop" : 1759417359768,
+          "duration" : 0
+        }
+      }, {
         "uid" : "ee05f3918ce3d551",
         "status" : "broken",
         "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
@@ -333,6 +342,6 @@
     },
     "tags" : [ "smoke" ]
   },
-  "source" : "233d304abecbce41.json",
+  "source" : "850213525fade9f9.json",
   "parameterValues" : [ "'lastname'", "'name'", "'31-000'", "True" ]
 }

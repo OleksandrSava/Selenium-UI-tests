@@ -1,111 +1,111 @@
 [ {
-  "uid" : "c612390aa8d0efc8",
+  "uid" : "f4b774457c78d51c",
+  "name" : "test_login[Login test 4]",
+  "time" : {
+    "start" : 1759486316197,
+    "stop" : 1759486326755,
+    "duration" : 10558
+  },
+  "status" : "broken",
+  "severity" : "blocker"
+}, {
+  "uid" : "7ae9c57ee02a060c",
+  "name" : "test_checkout[Checkout test 4]",
+  "time" : {
+    "start" : 1759486291298,
+    "stop" : 1759486291298,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "11316a297d5b2625",
+  "name" : "test_checkout[Checkout test 2]",
+  "time" : {
+    "start" : 1759486269384,
+    "stop" : 1759486269384,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "9a3360445256790e",
+  "name" : "test_login[Login test 3]",
+  "time" : {
+    "start" : 1759486315356,
+    "stop" : 1759486315820,
+    "duration" : 464
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "17cb8fb05edd2d43",
+  "name" : "test_checkout[Checkout test 1]",
+  "time" : {
+    "start" : 1759486258411,
+    "stop" : 1759486258411,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "b06dd93b4f17e174",
   "name" : "Purchase",
   "time" : {
-    "start" : 1759417385003,
-    "stop" : 1759417395141,
-    "duration" : 10138
+    "start" : 1759486247351,
+    "stop" : 1759486247351,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "blocker"
+}, {
+  "uid" : "5f7f7ece0b76e09c",
+  "name" : "test_login[Login test 2]",
+  "time" : {
+    "start" : 1759486314502,
+    "stop" : 1759486314965,
+    "duration" : 463
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "219554e802f86c7b",
+  "name" : "Purchase",
+  "time" : {
+    "start" : 1759486327669,
+    "stop" : 1759486337805,
+    "duration" : 10136
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "b0f639d258cb42f0",
-  "name" : "test_checkout[Checkout test 2]",
-  "time" : {
-    "start" : 1759417326771,
-    "stop" : 1759417326771,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "affba1ed9ad84add",
-  "name" : "test_checkout[Checkout test 4]",
-  "time" : {
-    "start" : 1759417348772,
-    "stop" : 1759417348772,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "66f9d5a679459667",
-  "name" : "test_login[Login test 2]",
-  "time" : {
-    "start" : 1759417371923,
-    "stop" : 1759417372398,
-    "duration" : 475
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "24e7d8e5fee6322a",
-  "name" : "test_login[Login test 3]",
-  "time" : {
-    "start" : 1759417372777,
-    "stop" : 1759417373233,
-    "duration" : 456
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "3bd99f381ab32ae0",
-  "name" : "test_checkout[Checkout test 3]",
-  "time" : {
-    "start" : 1759417337753,
-    "stop" : 1759417337753,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "233d304abecbce41",
-  "name" : "test_checkout[Checkout test 5]",
-  "time" : {
-    "start" : 1759417359768,
-    "stop" : 1759417359768,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "a5f7e740bd3c285f",
-  "name" : "Purchase",
-  "time" : {
-    "start" : 1759417304501,
-    "stop" : 1759417304501,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "blocker"
-}, {
-  "uid" : "87eedd20b4ee7acb",
-  "name" : "test_checkout[Checkout test 1]",
-  "time" : {
-    "start" : 1759417315818,
-    "stop" : 1759417315818,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "82367c4e0bd08d13",
+  "uid" : "c7cbf19548db9b78",
   "name" : "test_login[Login test 1]",
   "time" : {
-    "start" : 1759417371047,
-    "stop" : 1759417371528,
-    "duration" : 481
+    "start" : 1759486313644,
+    "stop" : 1759486314114,
+    "duration" : 470
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "9cbab3aaa53a0488",
-  "name" : "test_login[Login test 4]",
+  "uid" : "850213525fade9f9",
+  "name" : "test_checkout[Checkout test 5]",
   "time" : {
-    "start" : 1759417373607,
-    "stop" : 1759417384192,
-    "duration" : 10585
+    "start" : 1759486302397,
+    "stop" : 1759486302397,
+    "duration" : 0
   },
   "status" : "broken",
-  "severity" : "blocker"
+  "severity" : "critical"
+}, {
+  "uid" : "fc3ca754e6559984",
+  "name" : "test_checkout[Checkout test 3]",
+  "time" : {
+    "start" : 1759486280349,
+    "stop" : 1759486280349,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "critical"
 } ]

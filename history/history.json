@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "c7cbf19548db9b78",
+      "status" : "passed",
+      "time" : {
+        "start" : 1759486313644,
+        "stop" : 1759486314114,
+        "duration" : 470
+      }
+    }, {
       "uid" : "82367c4e0bd08d13",
       "status" : "passed",
       "time" : {
@@ -37,13 +45,22 @@
   "e9ba8d43b554fadfde2e7187192eb1c7" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "b06dd93b4f17e174",
+      "status" : "broken",
+      "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
+      "time" : {
+        "start" : 1759486247351,
+        "stop" : 1759486247351,
+        "duration" : 0
+      }
+    }, {
       "uid" : "a5f7e740bd3c285f",
       "status" : "broken",
       "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
@@ -75,13 +92,22 @@
   "9f66af34ffbe0204806a77f0f8b5fe38" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "17cb8fb05edd2d43",
+      "status" : "broken",
+      "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
+      "time" : {
+        "start" : 1759486258411,
+        "stop" : 1759486258411,
+        "duration" : 0
+      }
+    }, {
       "uid" : "87eedd20b4ee7acb",
       "status" : "broken",
       "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
@@ -113,13 +139,22 @@
   "7c7be13094d757d98047515a3d3f0d96" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "219554e802f86c7b",
+      "status" : "broken",
+      "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
+      "time" : {
+        "start" : 1759486327669,
+        "stop" : 1759486337805,
+        "duration" : 10136
+      }
+    }, {
       "uid" : "c612390aa8d0efc8",
       "status" : "broken",
       "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
@@ -151,13 +186,22 @@
   "4db89dca76e46480bcb74aa3e0caaa01" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "11316a297d5b2625",
+      "status" : "broken",
+      "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
+      "time" : {
+        "start" : 1759486269384,
+        "stop" : 1759486269384,
+        "duration" : 0
+      }
+    }, {
       "uid" : "b0f639d258cb42f0",
       "status" : "broken",
       "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
@@ -191,11 +235,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "5f7f7ece0b76e09c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1759486314502,
+        "stop" : 1759486314965,
+        "duration" : 463
+      }
+    }, {
       "uid" : "66f9d5a679459667",
       "status" : "passed",
       "time" : {
@@ -224,13 +276,22 @@
   "bfdc8aebec2a79ef5aaac52d5600a1df" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "f4b774457c78d51c",
+      "status" : "broken",
+      "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
+      "time" : {
+        "start" : 1759486316197,
+        "stop" : 1759486326755,
+        "duration" : 10558
+      }
+    }, {
       "uid" : "9cbab3aaa53a0488",
       "status" : "broken",
       "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
@@ -262,13 +323,22 @@
   "25e98c8aca9234dd565655095723fc29" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "fc3ca754e6559984",
+      "status" : "broken",
+      "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
+      "time" : {
+        "start" : 1759486280349,
+        "stop" : 1759486280349,
+        "duration" : 0
+      }
+    }, {
       "uid" : "3bd99f381ab32ae0",
       "status" : "broken",
       "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
@@ -302,11 +372,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "9a3360445256790e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1759486315356,
+        "stop" : 1759486315820,
+        "duration" : 464
+      }
+    }, {
       "uid" : "24e7d8e5fee6322a",
       "status" : "passed",
       "time" : {
@@ -335,13 +413,22 @@
   "3844ec7fc707e2be6997b4544039ff92" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "7ae9c57ee02a060c",
+      "status" : "broken",
+      "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
+      "time" : {
+        "start" : 1759486291298,
+        "stop" : 1759486291298,
+        "duration" : 0
+      }
+    }, {
       "uid" : "affba1ed9ad84add",
       "status" : "broken",
       "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
@@ -373,13 +460,22 @@
   "cb6e4cef0e0c95dcfff0706aedfdd9a6" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "850213525fade9f9",
+      "status" : "broken",
+      "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
+      "time" : {
+        "start" : 1759486302397,
+        "stop" : 1759486302397,
+        "duration" : 0
+      }
+    }, {
       "uid" : "233d304abecbce41",
       "status" : "broken",
       "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",

@@ -7,12 +7,12 @@
       "name" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
       "children" : [ {
         "name" : "Purchase",
-        "uid" : "a5f7e740bd3c285f",
+        "uid" : "b06dd93b4f17e174",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759417304501,
-          "stop" : 1759417304501,
+          "start" : 1759486247351,
+          "stop" : 1759486247351,
           "duration" : 0
         },
         "flaky" : false,
@@ -20,12 +20,12 @@
         "parameters" : [ ]
       }, {
         "name" : "test_checkout[Checkout test 1]",
-        "uid" : "87eedd20b4ee7acb",
+        "uid" : "17cb8fb05edd2d43",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759417315818,
-          "stop" : 1759417315818,
+          "start" : 1759486258411,
+          "stop" : 1759486258411,
           "duration" : 0
         },
         "flaky" : false,
@@ -33,12 +33,12 @@
         "parameters" : [ "''", "''", "''", "False" ]
       }, {
         "name" : "test_checkout[Checkout test 2]",
-        "uid" : "b0f639d258cb42f0",
+        "uid" : "11316a297d5b2625",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759417326771,
-          "stop" : 1759417326771,
+          "start" : 1759486269384,
+          "stop" : 1759486269384,
           "duration" : 0
         },
         "flaky" : false,
@@ -46,12 +46,12 @@
         "parameters" : [ "''", "'name'", "''", "False" ]
       }, {
         "name" : "test_checkout[Checkout test 3]",
-        "uid" : "3bd99f381ab32ae0",
+        "uid" : "fc3ca754e6559984",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759417337753,
-          "stop" : 1759417337753,
+          "start" : 1759486280349,
+          "stop" : 1759486280349,
           "duration" : 0
         },
         "flaky" : false,
@@ -59,12 +59,12 @@
         "parameters" : [ "'lastname'", "''", "''", "False" ]
       }, {
         "name" : "test_checkout[Checkout test 4]",
-        "uid" : "affba1ed9ad84add",
+        "uid" : "7ae9c57ee02a060c",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759417348772,
-          "stop" : 1759417348772,
+          "start" : 1759486291298,
+          "stop" : 1759486291298,
           "duration" : 0
         },
         "flaky" : false,
@@ -72,12 +72,12 @@
         "parameters" : [ "''", "''", "'31-000'", "False" ]
       }, {
         "name" : "test_checkout[Checkout test 5]",
-        "uid" : "233d304abecbce41",
+        "uid" : "850213525fade9f9",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759417359768,
-          "stop" : 1759417359768,
+          "start" : 1759486302397,
+          "stop" : 1759486302397,
           "duration" : 0
         },
         "flaky" : false,
@@ -85,26 +85,26 @@
         "parameters" : [ "'lastname'", "'name'", "'31-000'", "True" ]
       }, {
         "name" : "test_login[Login test 4]",
-        "uid" : "9cbab3aaa53a0488",
+        "uid" : "f4b774457c78d51c",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759417373607,
-          "stop" : 1759417384192,
-          "duration" : 10585
+          "start" : 1759486316197,
+          "stop" : 1759486326755,
+          "duration" : 10558
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "''", "''", "True" ]
       }, {
         "name" : "Purchase",
-        "uid" : "c612390aa8d0efc8",
+        "uid" : "219554e802f86c7b",
         "parentUid" : "67ab8d53552abb86baff55540292e010",
         "status" : "broken",
         "time" : {
-          "start" : 1759417385003,
-          "stop" : 1759417395141,
-          "duration" : 10138
+          "start" : 1759486327669,
+          "stop" : 1759486337805,
+          "duration" : 10136
         },
         "flaky" : false,
         "newFailed" : false,
