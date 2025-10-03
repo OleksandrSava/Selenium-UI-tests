@@ -1,12 +1,12 @@
 {
-  "uid" : "187f912e7578c02a",
+  "uid" : "5179a0f22ba8e484",
   "name" : "test_checkout[Checkout test 5]",
   "fullName" : "Tests.checkout_test.TestCheckout#test_checkout",
   "historyId" : "cb6e4cef0e0c95dcfff0706aedfdd9a6",
   "time" : {
-    "start" : 1759486853642,
-    "stop" : 1759486853890,
-    "duration" : 248
+    "start" : 1759489676664,
+    "stop" : 1759489676926,
+    "duration" : 262
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,197 +14,92 @@
   "beforeStages" : [ {
     "name" : "event_loop_policy",
     "time" : {
-      "start" : 1759486845325,
-      "stop" : 1759486845325,
+      "start" : 1759489669040,
+      "stop" : 1759489669040,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "_verify_url",
+    "name" : "setup",
     "time" : {
-      "start" : 1759486845325,
-      "stop" : 1759486845325,
+      "start" : 1759489676010,
+      "stop" : 1759489676010,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "prepare_checkout",
+    "name" : "base_url",
     "time" : {
-      "start" : 1759486853359,
-      "stop" : 1759486853641,
-      "duration" : 282
+      "start" : 1759489669040,
+      "stop" : 1759489669040,
+      "duration" : 0
     },
     "status" : "passed",
-    "steps" : [ {
-      "name" : "Check if https://www.saucedemo.com/inventory.html is open",
-      "time" : {
-        "start" : 1759486853359,
-        "stop" : 1759486853367,
-        "duration" : 8
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Adding 1 locator to cart",
-      "time" : {
-        "start" : 1759486853367,
-        "stop" : 1759486853435,
-        "duration" : 68
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Adding 2 locator to cart",
-      "time" : {
-        "start" : 1759486853435,
-        "stop" : 1759486853495,
-        "duration" : 60
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Click cart",
-      "time" : {
-        "start" : 1759486853495,
-        "stop" : 1759486853564,
-        "duration" : 69
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Check if https://www.saucedemo.com/cart.html is open",
-      "time" : {
-        "start" : 1759486853564,
-        "stop" : 1759486853568,
-        "duration" : 4
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Click checkout button",
-      "time" : {
-        "start" : 1759486853568,
-        "stop" : 1759486853637,
-        "duration" : 69
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Check if https://www.saucedemo.com/checkout-step-one.html is open",
-      "time" : {
-        "start" : 1759486853637,
-        "stop" : 1759486853641,
-        "duration" : 4
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    } ],
+    "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 7,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : true
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "prepare_login",
     "time" : {
-      "start" : 1759486852882,
-      "stop" : 1759486853359,
-      "duration" : 477
+      "start" : 1759489676010,
+      "stop" : 1759489676472,
+      "duration" : 462
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Open page https://www.saucedemo.com/",
       "time" : {
-        "start" : 1759486852882,
-        "stop" : 1759486853056,
-        "duration" : 174
+        "start" : 1759489676010,
+        "stop" : 1759489676196,
+        "duration" : 186
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : false
     }, {
       "name" : "Check if https://www.saucedemo.com/ is open",
       "time" : {
-        "start" : 1759486853056,
-        "stop" : 1759486853065,
-        "duration" : 9
+        "start" : 1759489676196,
+        "stop" : 1759489676202,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : false
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1759486853065,
-        "stop" : 1759486853175,
-        "duration" : 110
+        "start" : 1759489676202,
+        "stop" : 1759489676294,
+        "duration" : 92
       },
       "status" : "passed",
       "steps" : [ ],
@@ -213,16 +108,16 @@
         "name" : "login",
         "value" : "'standard_user'"
       } ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : true
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1759486853175,
-        "stop" : 1759486853250,
-        "duration" : 75
+        "start" : 1759489676294,
+        "stop" : 1759489676375,
+        "duration" : 81
       },
       "status" : "passed",
       "steps" : [ ],
@@ -231,86 +126,191 @@
         "name" : "password",
         "value" : "'secret_sauce'"
       } ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : true
     }, {
       "name" : "Click submit button",
       "time" : {
-        "start" : 1759486853250,
-        "stop" : 1759486853359,
-        "duration" : 109
+        "start" : 1759489676375,
+        "stop" : 1759489676472,
+        "duration" : 97
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
     "hasContent" : true
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1759489669040,
+      "stop" : 1759489669040,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1759486852576,
-      "stop" : 1759486852882,
-      "duration" : 306
+      "start" : 1759489675683,
+      "stop" : 1759489676009,
+      "duration" : 326
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "base_url",
+    "name" : "prepare_checkout",
     "time" : {
-      "start" : 1759486845325,
-      "stop" : 1759486845325,
-      "duration" : 0
+      "start" : 1759489676472,
+      "stop" : 1759489676663,
+      "duration" : 191
     },
     "status" : "passed",
-    "steps" : [ ],
+    "steps" : [ {
+      "name" : "Check if https://www.saucedemo.com/inventory.html is open",
+      "time" : {
+        "start" : 1759489676472,
+        "stop" : 1759489676475,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Adding 1 locator to cart",
+      "time" : {
+        "start" : 1759489676475,
+        "stop" : 1759489676518,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Adding 2 locator to cart",
+      "time" : {
+        "start" : 1759489676518,
+        "stop" : 1759489676559,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click cart",
+      "time" : {
+        "start" : 1759489676559,
+        "stop" : 1759489676608,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check if https://www.saucedemo.com/cart.html is open",
+      "time" : {
+        "start" : 1759489676608,
+        "stop" : 1759489676611,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click checkout button",
+      "time" : {
+        "start" : 1759489676611,
+        "stop" : 1759489676660,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check if https://www.saucedemo.com/checkout-step-one.html is open",
+      "time" : {
+        "start" : 1759489676660,
+        "stop" : 1759489676663,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "setup",
-    "time" : {
-      "start" : 1759486852882,
-      "stop" : 1759486852882,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
+    "stepsCount" : 7,
+    "hasContent" : true
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "Fill the form",
       "time" : {
-        "start" : 1759486853642,
-        "stop" : 1759486853810,
-        "duration" : 168
+        "start" : 1759489676664,
+        "stop" : 1759489676856,
+        "duration" : 192
       },
       "status" : "passed",
       "steps" : [ ],
@@ -325,70 +325,70 @@
         "name" : "postal_code",
         "value" : "'31-000'"
       } ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : true
     }, {
       "name" : "Click continue button",
       "time" : {
-        "start" : 1759486853810,
-        "stop" : 1759486853887,
-        "duration" : 77
+        "start" : 1759489676856,
+        "stop" : 1759489676921,
+        "duration" : 65
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : false
     }, {
       "name" : "Check if https://www.saucedemo.com/checkout-step-two.html is open",
       "time" : {
-        "start" : 1759486853887,
-        "stop" : 1759486853890,
-        "duration" : 3
+        "start" : 1759489676921,
+        "stop" : 1759489676926,
+        "duration" : 5
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1759486853893,
-      "stop" : 1759486853958,
-      "duration" : 65
+      "start" : 1759489676929,
+      "stop" : 1759489676990,
+      "duration" : 61
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
     "hasContent" : false
   } ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "Tests for checkout"
-  }, {
     "name" : "severity",
     "value" : "Critical"
+  }, {
+    "name" : "feature",
+    "value" : "Tests for checkout"
   }, {
     "name" : "tag",
     "value" : "smoke"
@@ -403,10 +403,10 @@
     "value" : "TestCheckout"
   }, {
     "name" : "host",
-    "value" : "8d3a87431b3c"
+    "value" : "084693edb3c7"
   }, {
     "name" : "thread",
-    "value" : "8-MainThread"
+    "value" : "1-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -445,11 +445,19 @@
         "failed" : 0,
         "broken" : 4,
         "skipped" : 0,
-        "passed" : 1,
+        "passed" : 2,
         "unknown" : 0,
-        "total" : 5
+        "total" : 6
       },
       "items" : [ {
+        "uid" : "187f912e7578c02a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1759486853642,
+          "stop" : 1759486853890,
+          "duration" : 248
+        }
+      }, {
         "uid" : "850213525fade9f9",
         "status" : "broken",
         "statusDetails" : "RuntimeError: Failed to open page https://www.saucedemo.com/inventory.html",
@@ -489,6 +497,6 @@
     },
     "tags" : [ "smoke" ]
   },
-  "source" : "187f912e7578c02a.json",
+  "source" : "5179a0f22ba8e484.json",
   "parameterValues" : [ "'lastname'", "'name'", "'31-000'", "True" ]
 }

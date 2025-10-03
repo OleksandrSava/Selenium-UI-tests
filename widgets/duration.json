@@ -1,110 +1,110 @@
 [ {
-  "uid" : "ce645232d5c47e69",
-  "name" : "test_login[Login test 2]",
-  "time" : {
-    "start" : 1759486855128,
-    "stop" : 1759486855610,
-    "duration" : 482
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "64e8cdaae628758f",
-  "name" : "test_login[Login test 4]",
-  "time" : {
-    "start" : 1759486856802,
-    "stop" : 1759486857285,
-    "duration" : 483
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "c225284c98d29511",
-  "name" : "Purchase",
-  "time" : {
-    "start" : 1759486846574,
-    "stop" : 1759486846966,
-    "duration" : 392
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "93b044f1b00ff43f",
+  "uid" : "fe7c406215f55052",
   "name" : "test_checkout[Checkout test 4]",
   "time" : {
-    "start" : 1759486852267,
-    "stop" : 1759486852510,
-    "duration" : 243
+    "start" : 1759489675380,
+    "stop" : 1759489675619,
+    "duration" : 239
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "187f912e7578c02a",
-  "name" : "test_checkout[Checkout test 5]",
-  "time" : {
-    "start" : 1759486853642,
-    "stop" : 1759486853890,
-    "duration" : 248
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "103b2f4b36ab1a89",
+  "uid" : "af39ab31f621fd07",
   "name" : "Purchase",
   "time" : {
-    "start" : 1759486858137,
-    "stop" : 1759486858484,
-    "duration" : 347
+    "start" : 1759489670165,
+    "stop" : 1759489670540,
+    "duration" : 375
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "8fd50124f2c28034",
+  "name" : "test_login[Login test 3]",
+  "time" : {
+    "start" : 1759489679007,
+    "stop" : 1759489679383,
+    "duration" : 376
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "f5063c7e62a371c5",
+  "name" : "Purchase",
+  "time" : {
+    "start" : 1759489681079,
+    "stop" : 1759489681417,
+    "duration" : 338
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ec4125d0470a3002",
+  "uid" : "4840524705b26a31",
+  "name" : "test_login[Login test 1]",
+  "time" : {
+    "start" : 1759489677329,
+    "stop" : 1759489677750,
+    "duration" : 421
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "a1098c9cbf505959",
+  "name" : "test_login[Login test 2]",
+  "time" : {
+    "start" : 1759489678168,
+    "stop" : 1759489678588,
+    "duration" : 420
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "564947a2e89fa75f",
   "name" : "test_checkout[Checkout test 3]",
   "time" : {
-    "start" : 1759486850879,
-    "stop" : 1759486851128,
+    "start" : 1759489674096,
+    "stop" : 1759489674345,
     "duration" : 249
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "1770c839ded191f0",
-  "name" : "test_login[Login test 3]",
-  "time" : {
-    "start" : 1759486855978,
-    "stop" : 1759486856423,
-    "duration" : 445
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "2672dee2e425f7d0",
+  "uid" : "b7b5b0f304debd86",
   "name" : "test_checkout[Checkout test 1]",
   "time" : {
-    "start" : 1759486848111,
-    "stop" : 1759486848341,
-    "duration" : 230
+    "start" : 1759489671593,
+    "stop" : 1759489671811,
+    "duration" : 218
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "8f2a3a8d60949e10",
-  "name" : "test_login[Login test 1]",
+  "uid" : "1f3b0ecf86c6fc5d",
+  "name" : "test_login[Login test 4]",
   "time" : {
-    "start" : 1759486854262,
-    "stop" : 1759486854750,
-    "duration" : 488
+    "start" : 1759489679791,
+    "stop" : 1759489680248,
+    "duration" : 457
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "5dfbdb55c4b362a5",
+  "uid" : "5179a0f22ba8e484",
+  "name" : "test_checkout[Checkout test 5]",
+  "time" : {
+    "start" : 1759489676664,
+    "stop" : 1759489676926,
+    "duration" : 262
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "5b3c821fa3732d7b",
   "name" : "test_checkout[Checkout test 2]",
   "time" : {
-    "start" : 1759486849489,
-    "stop" : 1759486849735,
-    "duration" : 246
+    "start" : 1759489672830,
+    "stop" : 1759489673066,
+    "duration" : 236
   },
   "status" : "passed",
   "severity" : "critical"
