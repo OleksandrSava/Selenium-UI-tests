@@ -15,7 +15,10 @@ jobs:
           sudo chmod +x /usr/local/bin/docker-compose
           docker-compose --version
 
-      - name: Checkout (copy) gh-pages repository to GitHub runner
+      - name: Create allure-results folder
+        run: mkdir -p ./allure-results/history
+
+      - name: Checkout gh-pages
         uses: actions/checkout@v2
         with:
           ref: gh-pages
@@ -27,7 +30,7 @@ jobs:
           PASSWORD: ${{ secrets.PASSWORD }}
         run: docker-compose up --exit-code-from regression
 
-      - name: Copy history from gh-pages to allure-results
+      - name: Copy Allure history
         run: |
           mkdir -p allure-results/history
           if [ -d "./.github/gh-pages/history" ]; then
