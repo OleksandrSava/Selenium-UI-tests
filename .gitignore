@@ -1,4 +1,3 @@
-# Python
 __pycache__/
 *.pyc
 *.pyo
@@ -7,36 +6,29 @@ __pycache__/
 *.swo
 *.log
 
-# Virtual environments
 .venv/
 venv/
 env/
 
-# Pytest cache
 .cache/
 .pytest_cache/
 
-# Allure results & reports (генерується в CI)
 allure-results/
 allure-report/
 
-# Coverage reports
 htmlcov/
 *.coverage
 *.cover
 *.cov
 *.gcov
 
-# IDE / Editors
 .idea/
 .vscode/
 *.iml
 
-# Docker
 *.pid
 *.seed
 *.pid.lock
 
-# OS
 .DS_Store
 Thumbs.db
