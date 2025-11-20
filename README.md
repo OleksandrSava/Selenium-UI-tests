@@ -34,6 +34,3 @@ Project layout
 Notes
 - Designed to run locally, in Docker, or in CI. Allure reporting and JUnit artifacts supported.
 - License: MIT (add LICENSE file if missing)
-
-Contributing / Support
-- Open issues or PRs; include failing logs and environment details.
