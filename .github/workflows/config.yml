@@ -38,7 +38,7 @@ jobs:
 
       - name: Copy previous Allure history from gh-pages
         run: |
-          mkdir -p allure-results/history
+          sudo mkdir -p allure-results/history
           if [ -d "./.github/gh-pages/history" ]; then
             cp -R ./.github/gh-pages/history/* allure-results/history/ || true
           elif [ -d "./.github/gh-pages/allure-report/history" ]; then
@@ -54,7 +54,7 @@ jobs:
 
       - name: Update gh-pages history from new report
         run: |
-          mkdir -p ./.github/gh-pages/history
+          sudo mkdir -p ./.github/gh-pages/history
           if [ -d "allure-report/history" ]; then
             cp -R allure-report/history/* ./.github/gh-pages/history/ || true
           else
