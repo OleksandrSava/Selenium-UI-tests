@@ -15,4 +15,4 @@ services:
       - LOGIN=${LOGIN}
       - PASSWORD=${PASSWORD}
 
-    command: /bin/sh -c pytest --alluredir=allure-results
+    command: "/bin/sh -c 'pytest -sv --alluredir=allure-results'"
