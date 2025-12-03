@@ -1,10 +1,10 @@
 name: UI CI/CD
 
 on:
-    push:
-      branches: [ "main" ]
-    pull_request:
-      branches: [ "main" ]
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 permissions:
   contents: write
@@ -19,7 +19,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Checkout gh-pages into runner (for history)
+      - name: Checkout gh-pages into runner (for Allure history)
         uses: actions/checkout@v4
         with:
           ref: gh-pages
@@ -27,29 +27,33 @@ jobs:
           fetch-depth: 1
 
       - name: Build image (fresh base, use cache)
-        run: |
-          docker compose build --pull
+        run: docker compose build --pull
 
-      - name: Run UI-tests via docker compose
+      - name: Run UI tests via docker compose
         env:
           LOGIN: ${{ secrets.LOGIN }}
           PASSWORD: ${{ secrets.PASSWORD }}
         run: |
           docker compose up --exit-code-from regression || true
-      
 
       - name: Copy previous Allure history from gh-pages
         run: |
           mkdir -p allure-results/history
           if [ -d "./.github/gh-pages/history" ]; then
             cp -R ./.github/gh-pages/history/* allure-results/history/ || true
+          elif [ -d "./.github/gh-pages/allure-report/history" ]; then
+            cp -R ./.github/gh-pages/allure-report/history/* allure-results/history/ || true
           else
             echo "No previous Allure history found, skipping copy."
           fi
 
-      - name: Generate Allure report
+      - name: Generate Allure report (runner-owned files)
         run: |
-          docker compose run --rm regression /bin/sh -c "allure generate allure-results --clean -o allure-report"
+          # Generate as the runner user to avoid permission issues
+          docker compose run --rm --user 1001:1001 regression /bin/sh -c "allure generate allure-results --clean -o allure-report"
+
+      - name: Ensure ownership for deploy
+        run: sudo chown -R $USER:$USER allure-report || true
 
       - name: Update gh-pages history from new report
         run: |
@@ -63,7 +67,7 @@ jobs:
       - name: Deploy to GitHub Pages (gh-pages branch)
         uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
-          token: ${{ secrets.CI_TOKEN_SELENIUM }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: allure-report
           clean: true
