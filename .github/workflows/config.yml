@@ -39,13 +39,9 @@ jobs:
       - name: Copy previous Allure history from gh-pages
         shell: bash
         run: |
-          set -euxo pipefail
           sudo mkdir -p allure-results/history
 
-          if [ -d "./.github/gh-pages/history" ]; then
-            echo "Copying history from ./.github/gh-pages/history -> allure-results/history"
-            sudo cp -R ./.github/gh-pages/history/* allure-results/history/ || true
-          elif [ -d "./.github/gh-pages/allure-report/history" ]; then
+          if [ -d "./.github/gh-pages/allure-report/history" ]; then
             echo "Copying history from ./.github/gh-pages/allure-report/history -> allure-results/history"
             sudo cp -R ./.github/gh-pages/allure-report/history/* allure-results/history/ || true
           else
