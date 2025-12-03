@@ -1,23 +1,37 @@
-FROM python:3.12.0a4-alpine3.17
-RUN echo "https://dl-4.alpinelinux.org/alpine/v3.10/main" >> /etc/apk/repositories && \
-    echo "https://dl-4.alpinelinux.org/alpine/v3.10/community" >> /etc/apk/repositories
+FROM python:3.12-alpine
 
-RUN apk update
-RUN apk add --no-cache chromium chromium-chromedriver tzdata
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    ALLURE_VERSION=2.27.0
 
-RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub
-RUN wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.30-r0/glibc-2.30-r0.apk
-RUN wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.30-r0/glibc-bin-2.30-r0.apk
+RUN apk update && apk add --no-cache \
+    chromium \
+    chromium-chromedriver \
+    nss \
+    udev \
+    harfbuzz \
+    freetype \
+    ttf-freefont \
+    font-noto \
+    curl \
+    tar \
+    bash \
+    openjdk17-jre
 
-RUN apk update && \
-    apk add openjdk11-jre curl tar && \
-    curl -o allure-2.13.8.tgz -Ls https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.8/allure-commandline-2.13.8.tgz && \
-    tar -zxvf allure-2.13.8.tgz -C /opt/ && \
-    ln -s /opt/allure-2.13.8/bin/allure /usr/bin/allure && \
-    rm allure-2.13.8.tgz
+RUN curl -sLo /tmp/allure.tgz "https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/${ALLURE_VERSION}/allure-commandline-${ALLURE_VERSION}.tgz" \
+    && mkdir -p /opt \
+    && tar -xzf /tmp/allure.tgz -C /opt \
+    && ln -s /opt/allure-${ALLURE_VERSION}/bin/allure /usr/bin/allure \
+    && rm /tmp/allure.tgz \
+    && allure --version
 
 WORKDIR /usr/workspace
 
-COPY ./requirements.txt /usr/workspace
+COPY requirements.txt /usr/workspace/requirements.txt
 
-RUN pip3 install -r requirements.txt
+RUN pip install --upgrade pip \
+    && pip install -r requirements.txt \
+    && pip install pytest selenium allure-pytest
+
+COPY . /usr/workspace

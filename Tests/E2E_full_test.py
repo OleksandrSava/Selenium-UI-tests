@@ -7,7 +7,6 @@ class TestFullPurchase(BaseTest):
 
     @allure.title("Purchase")
     @allure.severity("Blocker")
-    @pytest.mark.regression
     def test_purchase(self, prepare_checkout):
         info = ('Name', 'LastName', '30-500')
 

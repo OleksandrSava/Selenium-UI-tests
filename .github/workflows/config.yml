@@ -1,57 +1,67 @@
-name: UI Tests
+name: UI CI/CD
 
-on: workflow_dispatch
+on:
+    push:
+      branches: [ "main" ]
+    pull_request:
+      branches: [ "main" ]
+
+permissions:
+  contents: write
 
 jobs:
   ui-tests:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout source (main)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Install Docker Compose
-        run: |
-          sudo curl -L "https://github.com/docker/compose/releases/download/v2.24.6/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-          sudo chmod +x /usr/local/bin/docker-compose
-          docker-compose --version
-
-      - name: Checkout (copy) gh-pages repository to GitHub runner
-        uses: actions/checkout@v2
+      - name: Checkout gh-pages into runner (for history)
+        uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: ./.github/gh-pages
+          fetch-depth: 1
 
-      - name: Run UI-tests via docker-compose
+      - name: Build image (fresh base, use cache)
+        run: |
+          docker compose build --pull
+
+      - name: Run UI-tests via docker compose
         env:
           LOGIN: ${{ secrets.LOGIN }}
           PASSWORD: ${{ secrets.PASSWORD }}
         run: |
-          docker-compose up --exit-code-from regression || true
+          docker compose up --exit-code-from regression || true
+      
 
-      - name: Copy history from gh-pages to allure-results
+      - name: Copy previous Allure history from gh-pages
         run: |
-          sudo mkdir -p allure-results/history
+          mkdir -p allure-results/history
           if [ -d "./.github/gh-pages/history" ]; then
-            sudo cp -R ./.github/gh-pages/history/* allure-results/history/
+            cp -R ./.github/gh-pages/history/* allure-results/history/ || true
           else
             echo "No previous Allure history found, skipping copy."
           fi
 
       - name: Generate Allure report
         run: |
-          docker-compose run regression /bin/sh -c "allure generate allure-results --clean -o allure-report"
+          docker compose run --rm regression /bin/sh -c "allure generate allure-results --clean -o allure-report"
 
-      - name: Update Allure history
+      - name: Update gh-pages history from new report
         run: |
-          sudo mkdir -p ./.github/gh-pages/history
+          mkdir -p ./.github/gh-pages/history
           if [ -d "allure-report/history" ]; then
-            sudo cp -R allure-report/history/* ./.github/gh-pages/history/
+            cp -R allure-report/history/* ./.github/gh-pages/history/ || true
           else
             echo "No new Allure history generated, skipping update."
           fi
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+      - name: Deploy to GitHub Pages (gh-pages branch)
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
           token: ${{ secrets.CI_TOKEN_SELENIUM }}
           branch: gh-pages

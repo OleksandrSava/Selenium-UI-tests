@@ -1,4 +1,5 @@
 import pytest
+import allure
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from Config.Data import Data
@@ -13,6 +14,7 @@ def driver(request):
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
     options.add_argument("--disable-software-rasterizer")
+    options.add_argument("--use-gl=swiftshader")
     options.add_argument("--window-size=1920,1080")
     driver = webdriver.Chrome(options=options)
     request.cls.driver = driver
@@ -20,10 +22,6 @@ def driver(request):
     yield driver
 
     driver.quit()
-
-
-import pytest
-import allure
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
@@ -38,7 +36,6 @@ def pytest_runtest_makereport(item, call):
                 name=f"Failure_{item.name}",
                 attachment_type=allure.attachment_type.PNG
             )
-
 
 
 @pytest.fixture
