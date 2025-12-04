@@ -39,6 +39,7 @@ jobs:
       - name: Copy previous Allure history from gh-pages
         shell: bash
         run: |
+          set -euo pipefail
           sudo mkdir -p ./allure-results/history
           if [ -d "./.github/gh-pages/history" ]; then
             echo "Listing gh-pages/history:"
@@ -59,6 +60,7 @@ jobs:
       - name: Update Allure history
         shell: bash
         run: |
+          set -euo pipefail
           sudo mkdir -p "./.github/gh-pages/history"
           sudo cp -a "./allure-report/history/." "./.github/gh-pages/history/" || true
           echo "Updated gh-pages/history:"
