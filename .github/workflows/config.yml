@@ -48,25 +48,6 @@ jobs:
             echo "No history dir in gh-pages; skipping"
           fi
 
-      - name: Write Allure executor.json
-        shell: bash
-        run: |
-          sudo mkdir -p ./allure-results
-          sudo tee ./allure-results/executor.json > /dev/null <<'EOF'
-          {
-          "name": "GitHub Actions",
-          "type": "github",
-          "url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
-          "reportUrl": "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/",
-          "reportName": "UI Tests",
-          "buildName": "Run #${{ github.run_number }} @ ${{ github.ref_name }} (${% raw %}{{{% endraw %} github.sha %}...)", 
-          "buildOrder": ${{ github.run_number }}
-          }
-          EOF
-          sudo chown "$USER:$USER" ./allure-results/executor.json || true
-          echo "executor.json written:"
-          cat ./allure-results/executor.json || true
-
       - name: Verify history visible inside container
         run: |
           docker compose run --rm regression /bin/sh -c "ls -la /usr/workspace/allure-results/history || true"
