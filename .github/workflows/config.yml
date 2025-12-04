@@ -39,19 +39,32 @@ jobs:
       - name: Copy previous Allure history from gh-pages
         shell: bash
         run: |
-          sudo mkdir -p allure-results/history 
-          sudo cp -R ./.github/gh-pages/history/* allure-results/history/
-          sudo chown -R "$USER:$USER" allure-results || true
+          # allure-results міг створити контейнер як root -> mkdir/cp через sudo
+          sudo mkdir -p allure-results/history
+          if [ -d ".github/gh-pages/history" ]; then
+            echo "gh-pages history contents:"; ls -la ./.github/gh-pages/history || true
+            sudo cp -a ./.github/gh-pages/history/. allure-results/history/ || true
+          else
+            echo "No history on gh-pages yet; skipping copy."
+          fi
+      
 
       - name: Generate Allure report
         run: |
           docker compose run --rm regression /bin/sh -c "cd /usr/workspace && allure generate allure-results --clean -o allure-report"
-          sudo chown -R "$USER:$USER" allure-report || true
-          
+          sudo chown -R "$USER:$USER" allure-report allure-results || true
+
+      - name: Check generated Allure report contents
+        run: |
+          ls -la allure-report || true
+          ls -la allure-report/history || true
 
       - name: Update Allure history
         run: |
-          sudo cp -R allure-report/history/* ./.github/gh-pages/history/
+          mkdir -p ./.github/gh-pages/history
+          # Після chown вже без sudo
+          cp -a allure-report/history/. ./.github/gh-pages/history/ || true
+          ls -la ./.github/gh-pages/history || true
 
       - name: Deploy to GitHub Pages (gh-pages branch)
         uses: JamesIves/github-pages-deploy-action@v4.5.0
