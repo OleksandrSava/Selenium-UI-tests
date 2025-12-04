@@ -52,7 +52,7 @@ jobs:
         shell: bash
         run: |
           sudo mkdir -p ./allure-results
-          cat > ./allure-results/executor.json <<EOF
+          sudo cat > ./allure-results/executor.json <<EOF
           {
             "name": "GitHub Actions",
             "type": "github",
@@ -64,7 +64,7 @@ jobs:
           }
           EOF
           echo "executor.json written:"
-          cat ./allure-results/executor.json || true
+          sudo cat ./allure-results/executor.json || true
 
       - name: Verify history visible inside container
         run: |
